@@ -1,9 +1,7 @@
 var btn = document.querySelector('#button');
 var box =document.querySelector('.text')
 
-
-
-btn.addEventListener('click', () => {
+btn.addEventListener('click', function() {
 
 if (box.value == ''){
 
