@@ -1,17 +1,10 @@
 body {
   text-align: center;
-   -webkit-animation: mymove 5s infinite;
+  background-image: url('images/TEBeF.gif');
+
 }
 
-@-webkit-keyframes mymove {
-    from {background-color: grey;}
-    to {background-color: white;}
-}
 
-@keyframes mymove {
-    from {background-color: grey;}
-    to {background-color: white;}
-}
 
 #div1 {
   border: 2px solid black;
@@ -35,5 +28,23 @@ body {
 }
 
 h1{
-  background-color: yellow;
+  color: white;
+}
+
+.style {
+
+      margin: 20px 0 20px 0;
+      padding: 20px;
+      border-radius: 50px;
+      -webkit-animation: mymove 5s infinite;
+};
+
+@-webkit-keyframes mymove {
+    from {background-color: grey;}
+    to {background-color: white;}
+}
+
+@keyframes mymove {
+    from {background-color: grey;}
+    to {background-color: white;}
 }

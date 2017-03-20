@@ -1,5 +1,11 @@
 var btn = document.querySelector('#button');
-var box =document.querySelector('.text')
+var box =document.querySelector('.text');
+
+var isValidReg = funtion (regNumber) {
+return regNumber.startsWith ('CA')
+|| regNumber.startsWith ('CJ') ||
+regNumber.startsWith ('CY');
+}
 
 btn.addEventListener('click', function() {
 
