@@ -1,7 +1,7 @@
 var btn = document.querySelector('#button');
 var box =document.querySelector('.text');
 var list = document.querySelector('.lists');
-var paragraph = document.getElementById('para')
+//var paragraph = document.getElementById('para')
 var array = [];
 
 btn.addEventListener('click', function() {
@@ -27,6 +27,13 @@ else {
 
 list.addEventListener('change', function (e) {
   var filterArr = [];
+
+  var filter  = document.createElement('li')
+  filter.setAttribute('id','par');
+  document.body.appendChild(filter);
+
+
+
     for (var i = 0; i < array.length; i++) {
 
     if(e.target.value === 'default'){
@@ -43,6 +50,11 @@ list.addEventListener('change', function (e) {
 
     }
   }
-  
-  paragraph.innerHTML = filterArr;
+
+  for (var i=0; i < filterArr.length; i++) {
+
+    filter.innerHTML = filterArr[i];
+    filter[i].style.display = 'inline';
+  }
+  //paragraph.innerHTML = filterArr;
   });

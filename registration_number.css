@@ -51,14 +51,15 @@ h1{
     to {background-color: white;}
 }
 
-#para {
+#par {
   border: 2px solid black;
   padding: 40px;
   background-color: yellow;
   width: 150px;
   border-radius: 25px;
-  text-align: center;
   margin: 50px;
   text-transform: uppercase;
   list-style: none;
+  position: absolute;
+  right: 0px;
 };
