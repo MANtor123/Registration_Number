@@ -26,35 +26,20 @@ else {
 });
 
 list.addEventListener('change', function (e) {
-  var filterArr = [];
+  var regNumber = document.querySelectorAll('li')
 
-  var filter  = document.createElement('li')
-  filter.setAttribute('id','par');
-  document.body.appendChild(filter);
-
-
-
-    for (var i = 0; i < array.length; i++) {
-
-    if(e.target.value === 'default'){
-      array[i].style.display = 'block'
-
+  for (var i =0; i < regNumber.length; i++){
+    if (regNumber[i].innerHTML.startsWith(e.target.value )) {
+      regNumber[i].style.display = 'block';
     }
 
-    else if (array[i].startsWith(e.target.value)){
-      filterArr.push(array[i]);
-
+    else if (list.value === 'default') {
+      regNumber[i].style.display = 'block';
     }
+
     else {
-      array[i].style = 'none';
-
+      regNumber[i].style.display = 'none';
     }
   }
-
-  for (var i=0; i < filterArr.length; i++) {
-
-    filter.innerHTML = filterArr[i];
-    filter[i].style.display = 'inline';
-  }
-  //paragraph.innerHTML = filterArr;
+  
   });
