@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-image: url('images/TEBeF.gif');
+  background-image: url('images/bck.jpg');
 
 }
 
@@ -10,10 +10,10 @@ body {
   border: 2px solid black;
   padding: 40px;
   background-color: yellow;
-  width: 150px;
+  width: 70px;
   border-radius: 25px;
   text-align: center;
-  margin: 50px;
+  margin: 10px;
   text-transform: uppercase;
   list-style: none;
 };
@@ -23,14 +23,16 @@ body {
   height: 100px;
 }
 
-.btn {
-  background-image: url('images/reeg.jpg');
-  background-size: cover;
-  text-align: center;
+#button {
+  background-color: white;
+  color: black;
+  border: 2px solid #0FDDAF;
+  border-radius: 100px;
 }
 
 h1{
-  color: white;
+  color: black;
+  border-radius: 25px;
 }
 
 .style {
@@ -39,6 +41,7 @@ h1{
       padding: 20px;
       border-radius: 100px;
       -webkit-animation: mymove 5s infinite;
+      background-image: url('images/TEBeF.gif');
 };
 
 @-webkit-keyframes mymove {

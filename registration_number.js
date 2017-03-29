@@ -41,5 +41,5 @@ list.addEventListener('change', function (e) {
       regNumber[i].style.display = 'none';
     }
   }
-  
+
   });
